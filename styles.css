@@ -1,42 +1,63 @@
 ﻿body {
-  background-color: powderblue;
-}
-h1 {
-  color: blue;
-  text-align: center;
-}
-p {
-   font-family: verdana;
-  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* The navigation bar */
 .navbar {
   overflow: hidden;
-  background-color: #777;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+  background-color: #33cc33;
 }
 
-/* Links inside the navbar */
 .navbar a {
   float: left;
-  display: block;
-  color: #f2f2f2;
+  font-size: 16px;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-/* Change background on mouse-over */
-.navbar a:hover {
-  background: #ddd;
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #3366ff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
   color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
-/* Main content */
-.main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
 
+.dropdown:hover .dropdown-content {
+  display: block;
+}
